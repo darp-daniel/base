@@ -11,7 +11,8 @@ package aula6;
  */
 public class Usuario {
     
-    static String email;
-    static String senha;
+    String email;
+    String senha;
+    String nome;
     
 }

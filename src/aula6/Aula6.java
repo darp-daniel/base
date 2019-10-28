@@ -18,16 +18,46 @@ public class Aula6 {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Usuario u = new Usuario();
+        Usuario u2 = new Usuario();
+        Usuario u3 = new Usuario();
         
         System.out.println("Digite o e-mail");
-        Usuario.email = sc.nextLine();
+        u.email = sc.nextLine();
         
         System.out.println("Digite a senha");
-        Usuario.senha = sc.nextLine();
+        u.senha = sc.nextLine();
         
-        System.out.println("O e-mail é " + Usuario.email);
-        System.out.println("A senha é " + Usuario.senha);
+        System.out.println("Digite o seu nome");
+        u.nome = sc.nextLine();
         
+        System.out.println("Digite o e-mail");
+        u2.email = sc.nextLine();
+        
+        System.out.println("Digite a senha");
+        u2.senha = sc.nextLine();
+        
+        System.out.println("Digite o seu nome");
+        u2.nome = sc.nextLine();
+        
+        System.out.println("Digite o e-mail");
+        u3.email = sc.nextLine();
+        
+        System.out.println("Digite a senha");
+        u3.senha = sc.nextLine();
+        
+        System.out.println("Digite o seu nome");
+        u3.nome = sc.nextLine();
+        
+        System.out.println("O e-mail é " + u.email);
+        System.out.println("A senha é " + u.senha);
+        System.out.println("O seu nome é " + u.nome);
+        System.out.println("O e-mail é " + u2.email);
+        System.out.println("A senha é " + u2.senha);
+        System.out.println("O seu nome é " + u2.nome);
+        System.out.println("O e-mail é " + u3.email);
+        System.out.println("A senha é " + u3.senha);
+        System.out.println("O seu nome é " + u3.nome);
     }
     
 }
