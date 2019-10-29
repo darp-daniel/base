@@ -21,7 +21,6 @@ public class Aula6 {
         Usuario u = new Usuario();
         Usuario u2 = new Usuario();
         Usuario u3 = new Usuario();
-        String message = "";
         
         System.out.println("Digite o e-mail");
         u.email = sc.nextLine();
