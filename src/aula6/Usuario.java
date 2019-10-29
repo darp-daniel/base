@@ -13,6 +13,7 @@ public class Usuario {
     
     String email;
     String senha;
+    String confirmacaoSenha;
     String nome;
     
 }

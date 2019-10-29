@@ -21,6 +21,7 @@ public class Aula6 {
         Usuario u = new Usuario();
         Usuario u2 = new Usuario();
         Usuario u3 = new Usuario();
+        String message = "";
         
         System.out.println("Digite o e-mail");
         u.email = sc.nextLine();
@@ -28,36 +29,19 @@ public class Aula6 {
         System.out.println("Digite a senha");
         u.senha = sc.nextLine();
         
-        System.out.println("Digite o seu nome");
-        u.nome = sc.nextLine();
-        
-        System.out.println("Digite o e-mail");
-        u2.email = sc.nextLine();
-        
-        System.out.println("Digite a senha");
-        u2.senha = sc.nextLine();
-        
-        System.out.println("Digite o seu nome");
-        u2.nome = sc.nextLine();
-        
-        System.out.println("Digite o e-mail");
-        u3.email = sc.nextLine();
-        
-        System.out.println("Digite a senha");
-        u3.senha = sc.nextLine();
-        
-        System.out.println("Digite o seu nome");
-        u3.nome = sc.nextLine();
-        
-        System.out.println("O e-mail é " + u.email);
-        System.out.println("A senha é " + u.senha);
-        System.out.println("O seu nome é " + u.nome);
-        System.out.println("O e-mail é " + u2.email);
-        System.out.println("A senha é " + u2.senha);
-        System.out.println("O seu nome é " + u2.nome);
-        System.out.println("O e-mail é " + u3.email);
-        System.out.println("A senha é " + u3.senha);
-        System.out.println("O seu nome é " + u3.nome);
+        System.out.println("Confirme a senha");
+        u.confirmacaoSenha = sc.nextLine();
+        boolean b;
+        if(u.senha.equals(u.confirmacaoSenha)){
+            b = true;
+            System.out.println("Digite seu nome");
+            u.nome = sc.nextLine();
+            
+            System.out.println("O e-mail é " + u.email);
+            System.out.println("A senha é " + u.senha);
+            System.out.println("O seu nome é " + u.nome);
+        }else
+            System.out.println("Error, as senhas não batem");
     }
     
 }
